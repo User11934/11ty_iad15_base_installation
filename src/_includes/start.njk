@@ -8,12 +8,12 @@ layout: base.njk
   <!-- Client / Partner Logos Strip -->
   <section class="kunden" aria-label="Partner und Kunden">
     <div class="kunden-logos">
-      <img src="images/Logo_ShiatsuBlickpunkt-08.svg" alt="Logo ShiatsuBlickpunkt" />
-      <img src="images/Eighty Four Studio_01.svg.svg" alt="Logo EightyFourStudio" />
-      <img src="images/Logo_KnackFirisch_Pfad.svg" alt="Logo Knackfrisch" />
-      <img src="images/LogoCreativeActivity-01.png" alt="Logo CreativeActivity" />
-      <img src="images/onlyhair_skala.svg" alt="onlyhair" />
-      <img src="images/Bystronic.svg" alt="Bystronic" />
+      <img src="{{ '/images/Logo_ShiatsuBlickpunkt-08.svg' | url }}" alt="Logo ShiatsuBlickpunkt" />
+      <img src="{{ '/images/Eighty Four Studio_01.svg.svg' | url }}" alt="Logo EightyFourStudio" />
+      <img src="{{ '/images/Logo_KnackFirisch_Pfad.svg' | url }}" alt="Logo Knackfrisch" />
+      <img src="{{ '/images/LogoCreativeActivity-01.png' | url }}" alt="Logo CreativeActivity" />
+      <img src="{{ '/images/onlyhair_skala.svg' | url }}" alt="onlyhair" />
+      <img src="{{ '/images/Bystronic.svg' | url }}" alt="Bystronic" />
     </div>
   </section>
 
@@ -33,7 +33,7 @@ layout: base.njk
         {% include "partials/projects-list.njk"%}
       </div>
             <button class="secondary-button">
-              <a href="/project">Alle Projekte</a>
+              <a href="{{ '/projects/' | url }}">Alle Projekte</a>
             </button>
     </div>
   </section>
