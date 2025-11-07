@@ -1,6 +1,6 @@
 ---
 title: Bystronic — Global Merchandise Webshop
-image: /images/Macbook_Air_Mockup_2.jpg
+image: images/Macbook_Air_Mockup_2.jpg
 company: Bystronic
 year: 2025
 category: webshop
