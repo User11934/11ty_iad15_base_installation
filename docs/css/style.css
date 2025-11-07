@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PP Mori-Semibold";
-  src: url("fonts/PPMori-SemiBold.ttf") format("truetype");
+  src: url("public/fonts/PPMori-SemiBold.ttf") format("truetype");
 }
 
 html {
