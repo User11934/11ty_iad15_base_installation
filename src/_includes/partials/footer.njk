@@ -1,0 +1,40 @@
+<!-- Footer -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <div class="footer-contact">
+        <p><a href="mailto:hello@sveu.work">hello@sveu.work</a></p>
+      </div>
+
+      <div class="footer-socials">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/sveuwork" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copy">
+        <p>© <span id="year">2025</span> sveu.work</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    const nav = document.querySelector('nav');
+    const showMenu = () => {
+      //add class visible to nav
+      nav.classList.add('visible');
+      //remove class visible from burger icon
+      document.querySelector('.burger-icon').classList.remove('visible');
+      //add class visible to close icon
+      document.querySelector('.close-icon').classList.add('visible');
+    };
+    const hideMenu = () => {
+      //remove class visible from nav
+      nav.classList.remove('visible');
+      //add class visible to burger icon
+      document.querySelector('.burger-icon').classList.add('visible');
+      //remove class visible from close icon
+      document.querySelector('.close-icon').classList.remove('visible');
+    };
+  </script>

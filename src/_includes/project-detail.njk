@@ -1,0 +1,24 @@
+---
+layout: base.njk
+---
+
+
+<img src="{{ image }}" alt="{{ title }} image">
+
+<p>{{ lead }}</p>
+
+{% if year %}
+<p>year: {{ year }}</p>
+{% endif %}
+
+{% if company %}
+<p>company: {{ company }}</p>
+{% endif %}
+
+{% if category %}
+<p>category: {{ category }}</p>
+{% endif %}
+
+
+{{ content | safe }}
+

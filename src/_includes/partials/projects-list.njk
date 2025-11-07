@@ -1,0 +1,33 @@
+{# <link rel="stylesheet" href="/css/project-list.css">
+
+
+<p class="theme-debug level3">projects-list.njk</p>
+<section class="projects-section">
+    <div class="projects-grid">
+        {% for project in collections.projects %}
+        <article class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">
+                    {{ project.data.title }}
+                </h3>
+                <img src="{{ project.data.image }}" alt="{{ project.data.title }} image" class="project-image">
+                <a href="{{ project.url }}" class="project-link">go to {{ project.data.title }}</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+<p class="theme-debug level3">/projects-list.njk</p> #}
+
+{% for project in collections.projects %}
+        <article class="project">
+          <img src="{{ project.data.image }}" alt="Projekt 1 – UI Design" />
+          <div class="project-info">
+            <h3>{{ project.data.title }}</h3>
+            <p>{{ project.data.lead }}</p>
+            <button class="secondary-button">
+              <a href="{{ project.url }}">Ansehen</a>
+            </button>
+          </div>
+        </article>
+{% endfor %}

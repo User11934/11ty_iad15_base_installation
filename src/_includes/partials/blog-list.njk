@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/blog-list.css">
+
+
+<p class="theme-debug level3">blog-list.njk</p>
+<section class="blog-section">
+    <div class="blog-grid">
+        {% for blog in collections.blogs %}
+        <article class="blog-card">
+            <div class="blog-content">
+                <h3 class="blog-title">
+                    {{ blog.data.title }}
+                </h3>
+                <img src="{{ blog.data.image }}" alt="{{ blog.data.title }} image" class="blog-image">
+                <a href="{{ blog.url }}" class="blog-link">go to {{ blog.data.title }}</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+<p class="theme-debug level3">/blog-list.njk</p>

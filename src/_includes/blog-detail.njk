@@ -1,0 +1,14 @@
+---
+layout: base.njk
+additionalCSS:
+  - /css/blog-detail.css
+---
+<p class="theme-debug level2">blog-detail.njk</p>
+<article class="blog-post">
+    <h1 class="blog-title">{{ title }}</h1>
+    {# <p class="blog-date">{{ date | date("MMMM D, YYYY") }}</p> #}
+    <div class="blog-content">
+        {{ content | safe }}
+    </div>
+</article>
+<p class="theme-debug level2">/blog-detail.njk</p>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+
+      <header>
+    <div class="header-layout">
+      <a href="index.html" class="logo" aria-label="Startseite">
+        <img src="assets/Bildmarke.svg" alt="Logo" />
+      </a>
+      <div class="menu-icon">
+        <div class="burger-icon visible" onClick="showMenu()">
+          <img src="assets/burger-menu.svg">
+        </div>
+        <div class="close-icon" onClick="hideMenu()">
+          <img src="assets/close-menu.svg">
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="projekte.html">Projekte</a>
+          </li>
+          <li>
+            <a href="about me.html">Über mich</a>
+          </li>
+          <li>
+            <a href="kontakt.html" class="contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Hero Section -->
+  <section class="hero" aria-label="Hero">
+    <img class="background" src="/images/Group 7.png" alt="Background Gradient" />
+    <div class="hero-layout">
+      <h1>Portfolio</h1>
+      <h2>Sven Yanik Müller</h2>
+
+      <p class="header-subtitle">
+        Hey, ich freue mich, dir hier meine Projekte zu präsentieren. <br>Sie sind das Ergebnis meiner Zusammenarbeit
+        mit verschiedenen Personen und Unternehmen.
+      </p>
+
+      <button class="primary-button">
+        <a href="projekte.html" class="btn latest-projects">latest.projects</a>
+      </button>
+    </div>
+  </section>
+
+    <main>
+      <p class="theme-debug level2">blog.njk</p>
+<h1>Meine Blogbeiträge</h1>
+<p>Jede Woche gibts hier was neues auf die Augen 👀</p>
+
+<link rel="stylesheet" href="/css/blog-list.css">
+
+
+<p class="theme-debug level3">blog-list.njk</p>
+<section class="blog-section">
+    <div class="blog-grid">
+        
+        <article class="blog-card">
+            <div class="blog-content">
+                <h3 class="blog-title">
+                    Vibe-Coding mit VS Code
+                </h3>
+                <img src="" alt="Vibe-Coding mit VS Code image" class="blog-image">
+                <a href="/blog/vibe-coding/" class="blog-link">go to Vibe-Coding mit VS Code</a>
+            </div>
+        </article>
+        
+    </div>
+</section>
+<p class="theme-debug level3">/blog-list.njk</p>
+<p class="theme-debug level2">/project.njk</p>
+
+      </main>
+    <!-- Footer -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <div class="footer-contact">
+        <p><a href="mailto:hello@sveu.work">hello@sveu.work</a></p>
+      </div>
+
+      <div class="footer-socials">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/sveuwork" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copy">
+        <p>© <span id="year">2025</span> sveu.work</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    const nav = document.querySelector('nav');
+    const showMenu = () => {
+      //add class visible to nav
+      nav.classList.add('visible');
+      //remove class visible from burger icon
+      document.querySelector('.burger-icon').classList.remove('visible');
+      //add class visible to close icon
+      document.querySelector('.close-icon').classList.add('visible');
+    };
+    const hideMenu = () => {
+      //remove class visible from nav
+      nav.classList.remove('visible');
+      //add class visible to burger icon
+      document.querySelector('.burger-icon').classList.add('visible');
+      //remove class visible from close icon
+      document.querySelector('.close-icon').classList.remove('visible');
+    };
+  </script>
+</body>
+</html>
