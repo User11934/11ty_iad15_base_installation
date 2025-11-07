@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <!-- Base styles -->
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+    <!-- Component styles -->
+    <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/footer.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/project-list.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/blog-list.css' | url }}">
     {% if additionalCSS %}
         {% for css in additionalCSS %}
         <link rel="stylesheet" href="{{ css | url }}">

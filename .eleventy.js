@@ -1,8 +1,11 @@
 module.exports = function (eleventyConfig) {
     // Asset handling
-    eleventyConfig.addPassthroughCopy("./src/css");
-    eleventyConfig.addPassthroughCopy("./src/images");
-    eleventyConfig.addPassthroughCopy("src/fonts");
+    eleventyConfig.addPassthroughCopy({
+        "./src/css": "css",
+        "./src/images": "images",
+        "./src/fonts": "fonts"
+    });
+    
     eleventyConfig.addWatchTarget("./src/css/");
 
     // Add collection for projects
