@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
-    "build:github": "cross-env GITHUB_PAGES=true eleventy"
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
