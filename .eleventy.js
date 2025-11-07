@@ -10,11 +10,14 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByGlob("src/projects/*.md");
     });
 
+    // Use pathPrefix only when GITHUB_PAGES environment variable is set to true
+    const isGitHubPages = process.env.GITHUB_PAGES === "true";
+
     return {
         dir: {
             input: "src",
             output: "docs"
         },
-        pathPrefix: "/11ty_iad15_base_installation"
+        pathPrefix: isGitHubPages ? "/11ty_iad15_base_installation" : "/"
     };
 }
