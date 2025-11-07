@@ -5,9 +5,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/fonts");
     eleventyConfig.addWatchTarget("./src/css/");
 
-    // Handle both local and GitHub Pages environments
-    const pathPrefix = process.env.GITHUB_PAGES === "true" ? "/11ty_iad15_base_installation" : "/";
-
     // Add collection for projects
     eleventyConfig.addCollection("projects", function(collectionApi) {
         return collectionApi.getFilteredByGlob("src/projects/*.md");
@@ -18,6 +15,6 @@ module.exports = function (eleventyConfig) {
             input: "src",
             output: "docs"
         },
-        pathPrefix: pathPrefix
+        pathPrefix: "/11ty_iad15_base_installation"
     };
 }
